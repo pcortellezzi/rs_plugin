@@ -1,0 +1,25 @@
+[workspace]
+members = [
+    "crates/rs_plugin",
+    "crates/plugin_api",
+    "crates/plugin_type_1",
+    "crates/plugin_type_2",
+    "plugins/plugin_generic_1",
+    "plugins/plugin_generic_2",
+    "plugins/plugin_1",
+    "plugins/plugin_2"
+]
+
+[workspace.package]
+edition = "2021"
+
+[workspace.dependencies]
+rs_plugin = { path = "crates/rs_plugin" }
+plugin_api = { path = "crates/plugin_api" }
+plugin_type_1 = { path = "crates/plugin_type_1" }
+plugin_type_2 = { path = "crates/plugin_type_2" }
+
+plugin_generic_1 = { path = "plugins/plugin_generic_1" }
+plugin_generic_2 = { path = "plugins/plugin_generic_2" }
+plugin_1 = { path = "plugins/plugin_1" }
+plugin_2 = { path = "plugins/plugin_2" }

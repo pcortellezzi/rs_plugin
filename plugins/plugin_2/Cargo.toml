@@ -1,0 +1,11 @@
+[package]
+name = "plugin_2"
+version = "0.1.0"
+edition.workspace = true
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+plugin_api.workspace = true
+plugin_type_2.workspace = true
